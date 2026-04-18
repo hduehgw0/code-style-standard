@@ -1,0 +1,23 @@
+{
+  // 1. インデントの設定（スペース2つ）
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // 2. 保存時の自動整形
+  "editor.formatOnSave": true,
+
+  // 3. デフォルトのフォーマッターをPrettierに指定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 4. 末尾のスペース除去と最終行の改行
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // HTML特有のフォーマット設定（Prettierに任せるための下準備）
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
