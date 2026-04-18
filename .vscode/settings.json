@@ -3,8 +3,11 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
 
-  // 2. 保存時の自動整形
+  // 2. 保存時の自動整形（Prettier & Stylelint）
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
 
   // 3. デフォルトのフォーマッターをPrettierに指定
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -13,11 +16,12 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
 
-  // HTML特有のフォーマット設定（Prettierに任せるための下準備）
+  // 5. 言語ごとの個別設定
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "stylelint.validate": ["css"]
   }
 }
